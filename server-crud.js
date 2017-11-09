@@ -34,7 +34,7 @@ const updateFile = (fileName, suffix) => {
     .catch(err => console.log(`Read error: ${err}`));
 };
 
-// app.use(bodyParser.json());
+app.use(bodyParser.json());
 
 app.get('/getNote', (req, res) => {
   readFile('./test.json')
