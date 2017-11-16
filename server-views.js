@@ -4,6 +4,7 @@ const app = express();
 
 app.set('view engine', 'pug');
 app.set('views', './views');
+
 app.use('/store', (req, res, next) => {
   console.log('Jestem pośrednikiem przy żądaniu do /store');
   next();
