@@ -2,7 +2,7 @@
   "name": "kd-express",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server-auth.js",
   "scripts": {
     "listen": "nodemon"
   },

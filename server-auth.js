@@ -8,12 +8,17 @@ app.set('view engine', 'pug');
 app.set('views', './views');
 
 app.get('/', (req, res) => {
-  res.render('content', {
-    name: 'googlelogin',
+  res.render('main', {
+    name: 'Kliknij, żeby zalogować przez google',
     url: '/auth/google',
   });
 });
 
+app.get('/auth/google', (req, res) => {
+  res.render('login', {
+
+  });
+});
 
 app.listen(3000);
 app.use((req, res, next) => {
